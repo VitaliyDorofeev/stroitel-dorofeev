@@ -1,0 +1,17 @@
+.border-wrapper {
+    position: relative;
+  }
+
+.border {
+	position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 8px;
+    border-radius: 100px 100px 0 0;
+    background: rgba(33, 45, 85, 0.06);
+    transform: rotate(90deg);
+    top: 33px;
+    left: -5px;
+}
+
+// Обернуть border-wrapper внутри указать span с классом border

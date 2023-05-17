@@ -1,0 +1,174 @@
+$breakpoint: 960px;
+// You also need to change the JS breakpoint.
+
+.swiper-container {
+  overflow: hidden;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  @media (min-width: $breakpoint) {
+    min-height: 320px;
+  }
+  &-wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    @media (min-width: $breakpoint) {
+      flex-flow: row nowrap;
+    }
+  }
+}
+
+.swiper-button {
+  &-next,
+  &-prev {
+    color: #000;
+  }
+}
+
+.swiper-slide-galery {
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  background-color: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+
+  /* Slide content */
+  .description,
+  .title {
+    display: block;
+    opacity: 0;
+    transition: 0.5s ease 0.5s;
+  }
+  &-active {
+    .description,
+    .title {
+      opacity: 1;
+    }
+    .title {
+      margin-bottom: 0.5rem;
+      font-size: 24px;
+      color: #000;
+      transition: opacity 0.5s ease 0.5s;
+    }
+    .description {
+      font-size: 16px;
+      color: #777;
+      transition: opacity 0.5s ease 0.75s;
+    }
+  }
+}
+
+.gallery-top {
+  position: relative;
+  width: 100%;
+  height: 553px;
+  border-radius: 10px;
+  @media (min-width: $breakpoint) {
+    width: 848px !important;
+    height: 573px !important;
+    
+    margin-right: 30px;
+  }
+}
+
+.gallery-thumbs {
+
+    padding-top: 30px;
+  @media (min-width: $breakpoint) {
+    height: 573px !important;
+    width: 320px !important;
+    // width: 20%;
+    // height: 100vh;
+    padding: 0;
+  }
+  .swiper-wrapper-galery {
+    position: relative;
+    flex-direction: row;
+    @media (min-width: $breakpoint) {
+      flex-direction: column;
+    }
+  }
+  .swiper-slide-galery {
+    width: 100%;
+
+    flex-flow: row nowrap;
+    @media (min-width: $breakpoint) {
+      flex-flow: column nowrap;
+    width: 262px !important;
+
+    }
+    height: 100%;
+    opacity: 0.75;
+    cursor: pointer;
+  }
+  .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide-thumb {
+    border-radius: 10px;
+  }
+}
+
+.description {
+    padding-top: 25px;
+    padding-left: 20px;
+    position: absolute;
+    top: 140px;
+    left: 27px;
+    width: 538px;
+    height: 377px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+    border-radius: 10px;
+    z-index: 99;
+
+    /* Tablet */
+    @media (max-width:650px) {
+      padding-top: 20px;
+      left:-135px;
+      transform: translate(50%);
+      width: 290px;
+      height: auto;
+    }
+}
+
+.description__title {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 30px;
+
+    @media (max-width:650px) {
+        margin-bottom: 24px;
+    }
+}
+
+.description__subtitle {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 27px;
+    
+    font-weight: 400;
+    font-size: 16px;
+    color: #656D89;
+}
+
+.description__subtitle-item {
+    @media (max-width:650px) {
+      display: none;
+  }
+}
+
+.description__subtitle-item.active {
+  display: block !important;
+  
+}
+
+.description.active {
+  top: unset;
+}

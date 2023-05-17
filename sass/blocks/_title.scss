@@ -1,0 +1,13 @@
+.title {
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 1.17;
+    text-align: center;
+
+    /* Mobile XS */
+    @media (max-width:599px) {
+        font-weight: 400;
+        font-size: 28px;
+        line-height:1.4;
+    }
+}

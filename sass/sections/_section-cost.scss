@@ -1,0 +1,40 @@
+.section-cost {
+    margin-bottom: 30px;
+}
+
+.section-cost__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-cost__title {
+    margin-bottom: 28px;
+}
+
+.section-cost__subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-bottom: 16px;
+
+    /* Mobile XS */
+    @media (max-width:450px) {
+        text-align: center;
+    }
+}
+
+.price {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 2;
+}
+.section-cost__btn {
+    font-size: 22px;
+
+    /* Mobile XS */
+    @media (max-width:599px) {
+        font-size: 20px;
+    }
+}

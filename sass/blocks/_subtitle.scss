@@ -1,0 +1,10 @@
+.subtitle {
+    font-weight: 400;
+    font-size: 32px;
+
+    /* Mobile XS */
+    @media (max-width:599px) {
+        font-weight: 400;
+        font-size: 20px;
+    }
+}

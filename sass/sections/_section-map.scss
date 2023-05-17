@@ -1,0 +1,105 @@
+.section-map {
+    margin-bottom: 80px;
+}
+
+.section-map__wrapper-title {
+    margin-bottom: 60px;
+}
+
+.section-map__title {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 1.56;
+
+    /* Mobile */
+    @media (max-width:600px) {
+        font-size: 28px;
+    }
+}
+
+.map {
+    max-width: 1440px;
+    height: 663px;
+    margin: 0 auto;
+}
+
+.map-wrapper {
+    position: relative;
+}
+
+.map__list {
+    position: absolute;
+    top: 41px;
+    right: 13%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 15px;
+    z-index: 99;
+
+    /* Tablet */
+    @media (max-width:1199px) {
+        right: 5%;
+    }
+
+    /* Mobile XS */
+    @media (max-width:599px) {
+        right:0;
+    }
+}
+
+.map__item-wrapper {
+    width: 319px;
+    height: 102px;
+    padding-left: 20px;
+
+    background-color: #F9FCFD;
+    box-shadow: 0px 5px 15px rgba(33, 45, 85, 0.2);
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    /* Mobile XS */
+    @media (max-width:599px) {
+        &:nth-child(n+3) {
+            display: none;
+        }
+    }
+
+}
+
+.map__item {
+    display: flex;
+    align-items: center;
+    width: 286px;
+    height: 72px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 5px 19px rgba(33, 45, 85, 0.06);
+    border-radius: 10px;
+}
+
+.map__img {
+    width: 77px;
+    height: 80px;
+    color: #FFFFFF;
+}
+
+#marker2 path {
+    color:$accent-color-hover;
+}
+
+.map__subtitle {
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+
+// Убрать эдемент из карты
+
+[class*="copyrights-pane"] {
+	display: none !important;
+}
+
