@@ -96,14 +96,14 @@ let swiper2 =  new Swiper(".swiper2", {
     let placemark = new ymaps.Placemark(center, {},
      {
       iconLayout: 'default#image',
-      iconImageHref: '../img/section-map/marker2.svg',
+      iconImageHref: '../../img/section-map/marker2.svg',
       iconImageSize: [61, 61],
     });
 
     let placemark2 = new ymaps.Placemark([44.98991531986888,38.92749462549118], {},
       {
        iconLayout: 'default#image',
-       iconImageHref: '../img/section-map/toys2.svg',
+       iconImageHref: '../../img/section-map/toys2.svg',
        iconImageSize: [61, 61],
      });
 
@@ -117,14 +117,14 @@ let swiper2 =  new Swiper(".swiper2", {
      let placemark4 = new ymaps.Placemark([44.98858725117382,38.93064577385959], {},
       {
        iconLayout: 'default#image',
-       iconImageHref: '../img/section-map/help2.svg',
+       iconImageHref: '../../img/section-map/help2.svg',
        iconImageSize: [61, 61],
      });
 
      let placemark5 = new ymaps.Placemark([44.99057434609707,38.92833907410679], {},
       {
        iconLayout: 'default#image',
-       iconImageHref: '../img/section-map/shopping-basket2.svg',
+       iconImageHref: '../../img/section-map/shopping-basket2.svg',
        iconImageSize: [61, 61],
      });
 
