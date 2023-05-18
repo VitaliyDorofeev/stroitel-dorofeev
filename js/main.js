@@ -96,7 +96,7 @@ let swiper2 =  new Swiper(".swiper2", {
     let placemark = new ymaps.Placemark(center, {},
      {
       iconLayout: 'default#image',
-      iconImageHref: '../../img/section-map/marker2.svg',
+      iconImageHref: './img/section-map/marker2.svg',
       iconImageSize: [61, 61],
     });
 
